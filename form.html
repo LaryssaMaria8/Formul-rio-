@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Referencia ao arquivo html-->
+    <link rel = "stylesheet" type = "text/css" href ="form.css">
+
+    <script src="form.js"> </script>
+
+    <TITLE>Formulário de inscrição</TITLE>
+    
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend> <b>Formulário de inscrição</b></legend>
+                <br>
+                <form action="">
+                    
+                    <!--campo de registro de nome-->
+            <div class="inputbox">
+                <input type="text" name="nome" placeholder = "Digite seu nome completo"
+                 id="nome" class="inputUser" required>
+                <label for="=nome">Nome</label>     
+            </div>
+            </form>
+             <!--campo de registro de sobrenome-->
+            <br>
+            <div class="inputbox">
+                <input type="text" name="sobrenome" placeholder = "Digite seu sobreome" id="sobrenome" class="inputuser" required></input>
+                <label for="sobrenome">Sobrenome</label>
+            </div>
+            <br>
+            <!--campo de registro de email-->
+            <div class="inputbox">
+                <input type="email" name="email" placeholder = "Digite seu email" id="email" class="inputUser" required>
+                <label for="=email">Email</label>
+            </div>
+            <br>
+ <!--campo de registro de telefone-->
+            <div class="inputbox">
+                <input type="tel" name="telefone" placeholder = "Digite seu telefone" id="telefone" class="inputUser" required>
+                <label for="=telefone">telefone</label>
+            </div>
+             <!--campo de registro de CPF-->
+            <br>
+            <div>
+            <input type ="text" name="CPF" placeholder = "Digite seu CPF" id = "CPF" class="inputUser" maxlength="14" required>
+            <label for = "CPF" >CPF</label>
+            </div>
+            <br>
+<!--Bolinha de seleção de gênero-->
+            <p>Sexo</p>
+            <input type="radio" name="sexo" id="sexo" value="Masculino" required>
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="sexo" id="sexo" value="Feminino" required>
+            <label for="Feminino">Feminino</label>
+            <input type="radio" name="sexo" id="sexo" value="Outro" required>
+            <label for="Outro">outro</label>
+            <input type="radio" name="sexo" id="sexo" value="Não Binario" required>
+            <label for="Não Binario">Não Binario</label>
+            <div class="inputbox">
+                <br>
+                <!--Registro data de nascimento-->
+                <form>
+                <label for="data de nascimento"><b>Data de Nascimento</b></label>
+                <input type="date" name="data" min = "1920-01-01" max = "2023-12-31"id="data" class="inputUser" required>
+                </form>
+            </div>
+            <br>
+
+
+<!--Barra range salário-->
+                    <h1>Coloque sua pretenção salárial</h1>
+                    <form>
+                        
+                        <label for = "salário"> 
+                            <span id="range-value"></span>
+                        <input type="range" min="0" max="100000" value="500" oninput="updateRangeValue(this.value)">
+
+                    </label>
+                    </form>
+                    <!--campo seleção estado-->
+                    <form><h1>Selecione seu estado</h1>
+
+                        Selecione o Estado :
+                        <select name = "estado">
+                        <option value = "MG" >Minas Gerais</option>
+                        <option value = "RS" >Rio Grande do Sul</option>
+                        <option value = "SC" >Santa Catarina</option>
+                        <option value = "PR" >Paraná</option>
+                        <option value = "SP" >São Paulo</option>
+                        <option value = "RJ" >Rio de Janeiro</option>
+                        <option value = "ES" >Espirito Santo</option>
+                        <option value = "DF" >Destrito Fedeal</option>
+                        <option value = "GO" >Goias</option>
+                        <option value = "PA" >Para</option>
+                    </select>
+                    </form>
+                    <br>
+                
+        <!--Campo para escrever opinião-->
+                    <h1> Deixe sua opinião</h1>
+                    <form> 
+                        <h3>comente aqui a sua opinião </h3>
+                        <textarea type = "text"maxlenght = "1000" name = "Deixe seu comentário" 
+                        placeholder="Deixe Seu comentário" id = "deixe seu cometário" class = "inputuser" cols = "100" rows="
+                        25" ></textarea>
+
+                        <input type="submit" name="submit" id="submit">
+
+                    </div>
+                    <form>
+  <label for="senha">Senha:</label>
+  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+  <br><br>
+  <input type="submit" value="Enviar">
+</form>
+                </form>
+        </fieldset>
+        </form> 
+    </div> 
+    <h4>Clique aqui</h4>  
+    <h2><a href="segundapt.html">frogoreca.net</a></h2>
+</body>
+</html>

@@ -1,0 +1,140 @@
+html
+{
+    background-color: #000000
+}
+/*formatação do corpo*/
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 600px;
+    padding: 30px 70px 70px 70px;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    background-color: #6c0b0b;
+  }
+
+
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .inputbox label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inputbox input[type="text"],
+  .inputbox input[type="email"],
+  .inputbox input[type="tel"],
+  .inputbox input[type="number"],
+  .inputbox textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  /*formatação ds placeholders*/
+  .inputbox input[type="text"]::placeholder,
+  .inputbox input[type="email"]::placeholder,
+  .inputbox input[type="tel"]::placeholder,
+  .inputbox input[type="number"]::placeholder,
+  .inputbox textarea::placeholder {
+    color: #fff;
+    opacity: 0.6;
+  }
+  
+  .inputbox input[type="text"]:focus,
+  .inputbox input[type="email"]:focus,
+  .inputbox input[type="tel"]:focus,
+  .inputbox input[type="number"]:focus,
+  .inputbox textarea:focus {
+    border-bottom: 2px solid #000000;
+    outline: none;
+  }
+  /*formatação do radio*/
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  /*formatação do select*/
+  select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  /*formatação do autofocus*/
+  select:focus {
+    border-bottom: 2px solid #000000;
+    outline: none;
+  }
+  /*formatação do range*/
+  input[type="range"] {
+    
+    width: 50%;
+    height: 20px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+  
+    
+    width: 50px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+  /*formatação do comentário*/
+  textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  textarea:focus {
+    border-bottom: 2px solid #000000;
+    outline: none;
+  }
+  /*formatação do enviar*/
+  input[type="submit"] {
+    background-color: #800000;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #fff;
+    color: #800000;
+  }
